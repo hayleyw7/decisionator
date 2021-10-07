@@ -21,3 +21,13 @@ h1 {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+button {
+  background-color: green;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .2rem .5rem .2rem .5rem;
+  border-radius: 1rem;
+}
