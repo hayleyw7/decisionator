@@ -38,7 +38,7 @@ export class App extends Component {
         <h1>Decisionator</h1>
         <Form addIdea={this.addIdea} />
         <Ideas ideas={this.state.ideas} />
-        <DecisionButton makeDecision={this.makeDecision} />
+        {this.state.ideas.length > 1 && <DecisionButton makeDecision={this.makeDecision} />}
       </div>
     );
   }

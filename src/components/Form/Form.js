@@ -17,6 +17,8 @@ class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+
+    // document.querySelector('decision-button').classList.add("hidden");    
     
     // console.log(this.state)
 

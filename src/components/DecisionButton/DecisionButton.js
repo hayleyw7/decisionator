@@ -25,7 +25,7 @@ class DecisionButton extends Component {
     return (
 
       <button
-        className='submit'
+        className='decision-button'
         onClick={e => this.handleClick(e)}
       >
         Make Decision
