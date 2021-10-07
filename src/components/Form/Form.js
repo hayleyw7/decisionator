@@ -43,7 +43,7 @@ class Form extends Component {
 
         <input
           type='text'
-          placeholder='Enter ideas here, one at a time.'
+          placeholder='Option'
           name='submittedIdea'
           value={this.state.submittedIdea}
           onChange={e => this.handleChange(e)}
@@ -53,7 +53,7 @@ class Form extends Component {
           className='submit'
           onClick={e => this.handleSubmit(e)}
         >
-          Add Idea
+          Add
         </button>
 
       </form>
