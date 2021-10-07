@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Ideas from '../Ideas/Ideas';
 import Form from '../Form/Form';
+import DecisionButton from '../DecisionButton/DecisionButton';
 
 export class App extends Component {
   constructor(props) {
@@ -16,9 +17,20 @@ export class App extends Component {
     this.setState({
       ideas: [...this.state.ideas, newIdea]
     })
-console.log(this.state.ideas)
+  }
 
-  }     
+  makeDecision = () => {
+    const getRandomIndex = (array) => {
+      return Math.floor(Math.random() * array.length);
+    }
+
+    const getRandomIdea = () => {
+      const randomIdea = getRandomIndex(this.state.ideas);
+      return this.state.ideas[randomIdea];
+    }  
+
+    alert(getRandomIdea())
+  }
 
   render() {  
     return (
@@ -26,6 +38,7 @@ console.log(this.state.ideas)
         <h1>Decisionator</h1>
         <Form addIdea={this.addIdea} />
         <Ideas ideas={this.state.ideas} />
+        <DecisionButton makeDecision={this.makeDecision} />
       </div>
     );
   }

@@ -14,7 +14,10 @@ const Ideas = ({ ideas }) => {
 
   return (
     <section>
-      { ideaCards.length ? ideaCards : <p>You must add ideas if you want me to help you make a decision.</p> }
+      {
+        ideaCards.length ? ideaCards :
+        <p>You must add ideas if you want me to help you make a decision.</p>
+      }
     </section>
   )
 }
