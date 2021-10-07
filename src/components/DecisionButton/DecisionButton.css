@@ -1,3 +1,5 @@
-/* .decision-button {
-  display: none;
-} */
+.button-container {
+  border-top: .5rem #3a4e48 solid;
+  margin-top: .9rem;
+  padding-top: .9rem;
+}

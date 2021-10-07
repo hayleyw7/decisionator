@@ -16,14 +16,16 @@ class DecisionButton extends Component {
 
   render() {
     return (
+      <div className='button-container'>
 
-      <button
-        className='decision-button'
-        onClick={e => this.handleClick(e)}
-      >
-        Make Decision
-      </button>
+        <button
+          className='decision-button'
+          onClick={e => this.handleClick(e)}
+        >
+          Make Decision
+        </button>
 
+      </div>
     )
   }
 }
