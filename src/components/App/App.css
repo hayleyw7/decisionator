@@ -1,8 +1,14 @@
 body {
-  margin: 1rem;
   text-align: center;
   background-color: #282c34;
   color: white;
+}
+
+h1 {
+  background: green;
+  margin: 0 0 2rem 0;
+  padding: 1rem;
+  font-size: 3rem;
 }
 
 .App-header {
