@@ -29,7 +29,11 @@ export class App extends Component {
       return this.state.ideas[randomIdea];
     }  
 
-    alert(getRandomIdea())
+    const decision = getRandomIdea()
+
+    console.log(getRandomIdea())
+
+    alert(decision.submittedIdea)
   }
 
   render() {  
@@ -38,7 +42,7 @@ export class App extends Component {
         <h1>Decisionator</h1>
         <Form addIdea={this.addIdea} />
         <Ideas ideas={this.state.ideas} />
-        {this.state.ideas.length > 1 && <DecisionButton makeDecision={this.makeDecision} />}
+        {this.state.ideas.length > 0 && <DecisionButton makeDecision={this.makeDecision} />}
       </div>
     );
   }

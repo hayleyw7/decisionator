@@ -11,14 +11,7 @@ class DecisionButton extends Component {
   }
 
   handleClick = e => {
-    e.preventDefault();
-
-    const newIdea = {
-      ...this.state
-    }
-
-    this.props.addIdea(newIdea)
-    this.clearInputs();
+    this.props.makeDecision();
   }  
 
   render() {
