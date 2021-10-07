@@ -1,19 +1,27 @@
 form {
-  border-bottom: .5rem green solid;
-  padding-bottom: 1rem;
+  border-bottom: .5rem #3a4e48 solid;
+  padding: 1.7rem 0 1rem 0;
   margin-bottom: .9rem;
+  background-color: #040303;
+  color: white;
 }
 
-input {
-  color: #282c34;
+.input, select, textarea {
+  color: white;
   border-radius: 1rem;
   border: 0;
   padding: .25rem .5rem .25rem .5rem;
   margin: 0 .7rem .5rem 0;
   font-size: 1rem;
   width: 15.3rem;
-  background-color: 	#C8C8C8;
+  background-color: 	#6a7b76;
   text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+input::placeholder{
+  color: white;
 }
 
 .decision-button {

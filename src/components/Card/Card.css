@@ -2,8 +2,9 @@
   display: inline-block;
   margin: .5rem;
   padding: 5px;
-  background-color: #FFF;
   width: 20rem;
   color: #282c34;
   border-radius: 1rem;
+  background-color: #beb0a7;
+  font-weight: bold;
 }

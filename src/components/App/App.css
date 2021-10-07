@@ -1,33 +1,25 @@
 body {
   text-align: center;
-  background-color: #282c34;
+  background-color: #040303;
   color: white;
+  font-family: 'Courier New', monospace;
 }
 
 h1 {
-  background: green;
-  margin: 0 0 1.5rem 0;
-  padding: 1rem;
-  font-size: 3rem;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #3a4e48;
+  margin: 0;
+  padding: 1.3rem 1rem 1rem 1rem;
+  font-size: 2.5rem;
+  font-family: 'Courier New', monospace;
 }
 
 button {
-  background-color: green;
+  background-color: #8b9d83;
   border: 0;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   padding: .3rem .8rem .3rem .8rem;
   border-radius: 1rem;
+  font-family: 'Courier New', monospace;  
 }

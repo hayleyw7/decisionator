@@ -45,6 +45,7 @@ class Form extends Component {
           type='text'
           placeholder='Option'
           name='submittedIdea'
+          className='input'
           value={this.state.submittedIdea}
           onChange={e => this.handleChange(e)}
         />
