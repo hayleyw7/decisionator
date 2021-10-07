@@ -5,7 +5,9 @@ const Ideas = ({ ideas }) => {
   const ideaCards = ideas.map(idea => {
     return (
       <Card
-        idea={idea}
+        idea={idea.submittedIdea}
+        key={idea.submittedIdea}  
+        // id={id}
       />
     )
   });

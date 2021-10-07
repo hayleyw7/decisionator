@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Ideas from '../Ideas/Ideas';
-// import Form from '../Form/Form';
-
+import Form from '../Form/Form';
 
 export class App extends Component {
   constructor(props) {
@@ -14,18 +13,19 @@ export class App extends Component {
   }
 
   addIdea = (newIdea) => {
-      this.setState({
-        ideas: [...this.state.urls, newIdea]
-      })
+    this.setState({
+      ideas: [...this.state.ideas, newIdea]
+    })
+console.log(this.state.ideas)
+
   }     
 
   render() {  
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Decisionator</h1>
-        </header>
-        <Ideas ideas={this.state.ideas}/>
+        <h1>Decisionator</h1>
+        <Form addIdea={this.addIdea} />
+        <Ideas ideas={this.state.ideas} />
       </div>
     );
   }
