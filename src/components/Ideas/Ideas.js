@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
+import './Ideas.css';
 
 const Ideas = ({ ideas }) => {
   const ideaCards = ideas.map(idea => {
@@ -13,10 +14,10 @@ const Ideas = ({ ideas }) => {
   });
 
   return (
-    <section>
+    <section className='cards'>
       {
         ideaCards.length ? ideaCards :
-        <p>You must add ideas if you want me to help you make a decision.</p>
+        <p className='addOptions'>Add at least 1 option.</p>
       }
     </section>
   )

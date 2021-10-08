@@ -18,19 +18,16 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    // document.querySelector('decision-button').classList.add("hidden");    
-    
-    // console.log(this.state)
+    if (this.state.submittedIdea !== '') {
 
-    // const id = Date.now() 
+      const newIdea = {
+        // id: id,
+        ...this.state
+      }
 
-    const newIdea = {
-      // id: id,
-      ...this.state
+      this.props.addIdea(newIdea)
+      this.clearInputs();
     }
-
-    this.props.addIdea(newIdea)
-    this.clearInputs();
   }  
 
   clearInputs = () => {
@@ -43,8 +40,9 @@ class Form extends Component {
 
         <input
           type='text'
-          placeholder='Enter ideas here, one at a time.'
+          placeholder='Option'
           name='submittedIdea'
+          className='input'
           value={this.state.submittedIdea}
           onChange={e => this.handleChange(e)}
         />
@@ -53,7 +51,7 @@ class Form extends Component {
           className='submit'
           onClick={e => this.handleSubmit(e)}
         >
-          Add Idea
+          Add
         </button>
 
       </form>
