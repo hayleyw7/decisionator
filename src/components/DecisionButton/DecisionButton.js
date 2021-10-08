@@ -22,14 +22,15 @@ class DecisionButton extends Component {
     return (
       <div className='button-container'>
 
+        <div className='footer'>
+
         <button
           className='decision-button'
           onClick={e => this.handleClick(e)}
         >
           Make Decision
         </button>
-
-        <div className='footer'>
+                
           <button
             className='start-over-button'
             onClick={e => this.startOver(e)}
