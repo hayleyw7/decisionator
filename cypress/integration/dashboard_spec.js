@@ -2,7 +2,7 @@ describe('Dashboard', () => {
 
   beforeEach(() => {
     cy.visit('http://localhost:3000')
-  }) 
+  })
 
   it('should have home url when visiting app', () => {
     cy.url().should('eq', 'http://localhost:3000/')
