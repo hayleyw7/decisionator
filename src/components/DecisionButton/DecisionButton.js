@@ -37,7 +37,7 @@ class DecisionButton extends Component {
           >
             Start Over
           </button>  
-        </div>      
+        </div>
 
       </div>
     )
