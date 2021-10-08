@@ -17,7 +17,7 @@ const Ideas = ({ ideas }) => {
     <section>
       {
         ideaCards.length ? ideaCards :
-        <p className='addOptions'>You must add at least 2 options.</p>
+        <p className='addOptions'>Add at least 1 option.</p>
       }
     </section>
   )

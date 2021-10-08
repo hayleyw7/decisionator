@@ -3,3 +3,19 @@
   margin-top: .9rem;
   padding-top: .9rem;
 }
+
+.start-over-button {
+  margin-top: 1rem;
+  width: 20.5rem;
+  background-color: #6a7b76;
+  bottom: 1rem;
+  position: fixed;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  margin-left: -10.3rem;
+  background-color: #040303;
+  width: 100%;
+}

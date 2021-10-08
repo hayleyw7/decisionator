@@ -14,6 +14,10 @@ class DecisionButton extends Component {
     this.props.makeDecision();
   }  
 
+  startOver = e => {
+    window.location.reload(false);
+  }
+
   render() {
     return (
       <div className='button-container'>
@@ -24,6 +28,15 @@ class DecisionButton extends Component {
         >
           Make Decision
         </button>
+
+        <div className='footer'>
+          <button
+            className='start-over-button'
+            onClick={e => this.startOver(e)}
+          >
+            Start Over
+          </button>  
+        </div>      
 
       </div>
     )
