@@ -12,5 +12,4 @@ describe('Dashboard', () => {
     cy.get('h1')
       .contains('Decisionator')
   })
-
 })
