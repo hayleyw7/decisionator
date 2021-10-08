@@ -19,13 +19,13 @@ cache:
   # install dependencies and check that Cypress can run
   override:
     - npm ci
-    - npm run cy:verify
+    - npm cypress run:verify
 
 script:
   # start server in the background
   - npm run start:ci &
   # run all Cypress tests and record on the dashboard
-  - npm run cy:run -- --record
+  - npm cypress run:run -- --record
   # after all tests finish running we need
   # to kill all background jobs (like "npm start &")
   # this avoids flake in Travis jobs
