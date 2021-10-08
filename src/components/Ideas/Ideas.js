@@ -14,7 +14,7 @@ const Ideas = ({ ideas }) => {
   });
 
   return (
-    <section>
+    <section className='cards'>
       {
         ideaCards.length ? ideaCards :
         <p className='addOptions'>Add at least 1 option.</p>

@@ -1,21 +1,33 @@
 .button-container {
-  border-top: .5rem #3a4e48 solid;
-  margin-top: .9rem;
-  padding-top: .9rem;
+  border-bottom: .5rem #040303 solid;
+  padding-bottom: .1rem;
+  margin-bottom: 1rem;
 }
 
 .start-over-button {
   margin-top: 1rem;
   width: 20.5rem;
   background-color: #6a7b76;
-  bottom: 1rem;
+  bottom: 1.2rem;
   position: fixed;
 }
 
 .footer {
-  margin: 0 auto;
+  /* margin: 0 auto;
   text-align: center;
   margin-left: -10.3rem;
   background-color: #040303;
+  width: 100%; */
+
+  background: #040303;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: .7rem;
+  position: fixed;
   width: 100%;
+  bottom: 0;
+  position: fixed; 
+  height: 3rem;
 }
