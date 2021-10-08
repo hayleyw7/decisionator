@@ -30,3 +30,8 @@ script:
   # to kill all background jobs (like "npm start &")
   # this avoids flake in Travis jobs
   - kill $(jobs -p) || true
+
+deploy:
+  provider: surge
+  project: ./static/
+  domain: decisionator.surge.sh
