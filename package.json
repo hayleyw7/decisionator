@@ -41,4 +41,16 @@
   "devDependencies": {
     "cypress": "^8.5.0"
   }
+
+  "resolutions": {
+    "hoek": "4.2.1"
+  }
+
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions"
+  }
+
+
+
+
 }
