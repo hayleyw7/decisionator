@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Decisionator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Stuck choosing between options? Decisionator picks one at random so you can move on.
 
-## Available Scripts
+**Try it:** [https://decisionator.surge.sh/](https://decisionator.surge.sh/)
 
-In the project directory, you can run:
+## What it does
 
-### `npm start`
+Add the choices you are weighing—where to eat, what movie to watch, which task to tackle first—and let the app choose for you. It is meant for low-stakes decisions when you would rather not debate any longer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to use it
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Add your options** — Type an option in the text box and click **Add**. Repeat until every choice is listed.
+2. **Review your list** — Your options appear as cards on the page. You need at least one before you can decide.
+3. **Make a decision** — Click **Make Decision**. The app randomly picks one option and shows it in a popup.
+4. **Start over** — Click **Start Over** to clear everything and begin a new list.
 
-### `npm test`
+## Tips
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Add every option you care about** before clicking **Make Decision**. The app only chooses from what you have entered.
+- **Use short, clear labels** so the result is easy to read in the popup (for example, “Thai food” instead of a long sentence).
+- **Nothing is saved** — If you refresh the page or click **Start Over**, your list disappears. Write down the winner if you need to remember it.
+- **Same option twice?** — Entering the same text twice counts as two separate choices, so it can be picked twice as often.
 
-### `npm run build`
+## Good for
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Picking dinner, weekend plans, or a movie
+- Choosing which small task to do next
+- Breaking a tie when you and friends are fine with any option
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Not for
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Important or high-stakes decisions (money, health, relationships, legal matters)
+- Situations where you need a fair vote or weighted preferences—the app treats every option equally
 
-### `npm run eject`
+## Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Decisionator runs in your web browser. You need JavaScript enabled. No account or download is required.
