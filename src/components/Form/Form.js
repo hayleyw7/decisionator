@@ -7,7 +7,6 @@ class Form extends Component {
     this.props = props;
     this.state = {
       submittedIdea: '',
-      // id: ''
     };
   }
 
@@ -18,42 +17,42 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    if (this.state.submittedIdea !== '') {
-
+    if (this.state.submittedIdea.trim() !== '') {
       const newIdea = {
-        // id: id,
-        ...this.state
+        ...this.state,
+        submittedIdea: this.state.submittedIdea.trim()
       }
 
       this.props.addIdea(newIdea)
       this.clearInputs();
     }
-  }  
+  }
 
   clearInputs = () => {
-    this.setState({submittedIdea: ''});
+    this.setState({ submittedIdea: '' });
   }
 
   render() {
-    return (
-      <form>
+    const isEmpty = this.state.submittedIdea.trim() === '';
 
+    return (
+      <form onSubmit={this.handleSubmit}>
         <input
           type='text'
-          placeholder='Option'
+          placeholder='Add an option…'
           name='submittedIdea'
           className='input'
           value={this.state.submittedIdea}
-          onChange={e => this.handleChange(e)}
+          onChange={this.handleChange}
         />
 
         <button
+          type='submit'
           className='submit'
-          onClick={e => this.handleSubmit(e)}
+          disabled={isEmpty}
         >
           Add
         </button>
-
       </form>
     )
   }
