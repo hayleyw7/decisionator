@@ -1,10 +1,38 @@
-.idea {
-  display: inline-block;
-  margin: .5rem;
-  padding: 5px;
-  width: 20rem;
+.idea-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.85rem 0.95rem;
+  border-radius: 14px;
+  background: rgba(190, 176, 167, 0.92);
   color: #282c34;
-  border-radius: 1rem;
-  background-color: #beb0a7;
-  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.idea-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.idea-index {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: rgba(40, 44, 52, 0.12);
+  color: rgba(40, 44, 52, 0.55);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.idea {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: break-word;
 }
