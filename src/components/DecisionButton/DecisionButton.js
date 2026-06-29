@@ -14,8 +14,8 @@ class DecisionButton extends Component {
     this.props.makeDecision();
   }  
 
-  startOver = e => {
-    window.location.reload(false);
+  startOver = () => {
+    this.props.startOver();
   }
 
   render() {
